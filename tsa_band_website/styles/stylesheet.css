@@ -76,6 +76,10 @@ body {
   transition: background-color 1s ease 0s;
 }
 
+.navbar-brand {
+ padding-top: 1.0rem;
+}
+
 /* cite source for this or remove it when done */
 .navbar.solid {
   background-color: #490D40;
