@@ -60,6 +60,13 @@ body {
   background-size: cover;
 }
 
+/* In case phones do not support background-attachment: fixed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
 .navbar {
   height: 50px;
   background-color: transparent;
