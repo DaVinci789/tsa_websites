@@ -3,6 +3,11 @@
  */
 
 /* Links */
+
+.card-body {
+    color:black;
+}
+
 a,
 a:focus,
 a:hover {
@@ -52,12 +57,18 @@ body {
 }
 
 .myimage {
-  /*background-size: cover;*/
-  background-image: url("https://www.rover.com/blog/wp-content/uploads/2017/05/pug-tilt-960x540.jpg");
+  background-size: cover;
+  background-image: url("../assets/main_banner.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@supports (-webkit-appearance:none) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 /* In case phones do not support background-attachment: fixed */
@@ -92,16 +103,11 @@ body {
     }
 
     .navbar-nav {
-
        > li {
-
           > a {
             color: #C57ED3;
             transition: color 1s ease 0s;
           }
-
        }
-
     }
-
 }
